@@ -109,6 +109,7 @@ void CFE_SB_InitMsg(void           *MsgPtr,
 */
 uint16 CFE_SB_MsgHdrSize(const CFE_SB_Msg_t *MsgPtr)
 {
+    /* cppcheck-suppress unusedVariable */
     uint16 size;
 
 #ifdef MESSAGE_FORMAT_IS_CCSDS

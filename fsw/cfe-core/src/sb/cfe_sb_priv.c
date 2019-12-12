@@ -705,6 +705,7 @@ char *CFE_SB_GetAppTskName(uint32 TaskId,char *FullName){
 */
 uint8 CFE_SB_GetPktType(CFE_SB_MsgId_t MsgId)
 {
+    /* cppcheck-suppress unreadVariable */
     CFE_SB_MsgId_Atom_t Val = MsgId;
 
 #ifdef MESSAGE_FORMAT_IS_CCSDS
